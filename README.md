@@ -40,6 +40,17 @@ TrueCrypt 自体は開発が終了しているが、インストールは問題�
 これは `C:\Windows\System32\drivers\AppleHFS.sys` を `AppleHFS.sys.bkp` に
 リネームして再起動すれば暗号化コンテナを作成できるようになる。
 
+1. ボリューム作成
+2. 暗号化されたファイルコンテナを作成
+3. TrueCrypt標準ボリューム
+4. ```C:\Works\AllWork.dat``` を選択
+5. AES、RIPEMD-160選択
+6. 40GB入力
+7. NTFSを選択
+
+作成したコンテナを Z: にマウントし、メニューから「お気に入り」->「選択したボリュームをログオン時にマウントする」
+
+
 
 ## Go
 Go を https://golang.org/ からインストールしたら、環境変数 `GOPATH` を作成して `Z:\` に設定する。

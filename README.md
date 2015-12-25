@@ -87,4 +87,20 @@ go get github.com/motemen/ghq
   root = Z:/src
 ```
 
+## SourceTree
+メニューから「ツール」->「オプション」からプロジェクトフォルダを ```Z:\src\github.com\toruuetani``` にする。
+マージを WinMerge でできるようにするため、設定ファイル `C:\Users\toru\.gitconfig` に WinMerge の設定を追記する。
+
+```
+[merge]
+	tool = WinMerge
+[mergetool "WinMerge"]
+    cmd = \"C:/Program Files/WinMerge/WinMergeU.exe\" //e //u //wl //wr \"$LOCAL\" \"$BASE\" \"$REMOTE\" //o \"$MERGED\"
+    trustExitCode = true
+[diff]
+	guitool = winmerge
+[difftool "winmerge"]
+	path = C:/Program Files/WinMerge/winmergeu.exe
+	cmd = \"C:/Program Files/WinMerge/winmergeu.exe\" -e -u \"$LOCAL\" \"$REMOTE\"
+```
 

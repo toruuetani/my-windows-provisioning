@@ -104,3 +104,13 @@ go get github.com/motemen/ghq
 	cmd = \"C:/Program Files/WinMerge/winmergeu.exe\" -e -u \"$LOCAL\" \"$REMOTE\"
 ```
 
+
+## Visual Studio Code
+```https://github.com/adobe-fonts/source-han-code-jp/archive/2.000R.zip``` をダウンロードしてインストールしておく。
+メニューから File -> Preferences -> User Settings と選択し、 ```settings.json``` を以下のように編集する。
+```
+{
+    "editor.fontFamily": "源ノ角ゴシック Code JP",
+    "editor.fontSize": 14
+}
+```

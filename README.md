@@ -114,3 +114,22 @@ go get github.com/motemen/ghq
     "editor.fontSize": 14
 }
 ```
+
+
+## OneDrive
+アンインストールは下記のコマンドで行う。
+
+```
+taskkill /f /im OneDrive.exe
+%SystemRoot%\System32\OneDriveSetup.exe /uninstall  #32bitの場合
+%SystemRoot%\SysWOW64\OneDriveSetup.exe /uninstall  #64bitの場合
+```
+
+レジストリエディタで下記を修正して、エクスプローラのナビから削除する。
+```
+キー：HKEY_CLASSES_ROOT\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}
+エントリ：System.IsPinnedToNameSpaceTree (REG_DWORD)
+値：0 (非表示)
+```
+
+

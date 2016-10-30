@@ -24,6 +24,24 @@ Fnと同時押ししないとF1～F12が使えなくなるのでレジストリ�
  * ［機能選択］ダイアログボックスで［IME-オフ］を選択し、［OK］ボタンをクリック。
 
 
+## TrueCrypt Ver.7.1a
+TrueCrypt 自体は開発が終了しているが、インストールは問題ない。
+ただし、暗号化コンテナを作成してもエラーが出て使用できない。
+これは `C:\Windows\System32\drivers\AppleHFS.sys` を `AppleHFS.sys.bkp` に
+リネームして再起動すれば暗号化コンテナを作成できるようになる。
+
+1. ボリューム作成
+2. 暗号化されたファイルコンテナを作成
+3. TrueCrypt標準ボリューム
+4. ```C:\Works\AllWork.dat``` を選択
+5. AES、RIPEMD-160選択
+6. 40GB入力
+7. NTFSを選択
+
+作成したコンテナを Z: にマウントし、メニューから「お気に入り」->「選択したボリュームをログオン時にマウントする」
+※以下の記述は Z: にマウントした状態を前提とする。
+
+
 ## Cisco VPN Client Ver.5.0.07.0440
 Windows10 には対応してないため、そのままではインストールできない。
 ```
@@ -51,28 +69,19 @@ Reason 442: Failed to enable Virtual Adapter.
 1. 再起動
 
 
-## TrueCrypt Ver.7.1a
-TrueCrypt 自体は開発が終了しているが、インストールは問題ない。
-ただし、暗号化コンテナを作成してもエラーが出て使用できない。
-これは `C:\Windows\System32\drivers\AppleHFS.sys` を `AppleHFS.sys.bkp` に
-リネームして再起動すれば暗号化コンテナを作成できるようになる。
-
-1. ボリューム作成
-2. 暗号化されたファイルコンテナを作成
-3. TrueCrypt標準ボリューム
-4. ```C:\Works\AllWork.dat``` を選択
-5. AES、RIPEMD-160選択
-6. 40GB入力
-7. NTFSを選択
-
-作成したコンテナを Z: にマウントし、メニューから「お気に入り」->「選択したボリュームをログオン時にマウントする」
-
-
 
 ## Go
 Go を https://golang.org/ からインストールしたら、環境変数 `GOPATH` を作成して `Z:\` に設定する。
 さらに環境変数 `PATH` を `%PATH%;%GOPATH%\bin;` に設定する。
 
+
+## Git
+`go get` するには Git が不可欠なので https://git-scm.com/download/win からダウンロードしてインストールする。
+また、ユーザー情報を下記のように設定しておく。
+```
+git config --global user.name "toruuetani"
+git config --global user.email toruuetani __at__ gmail.com
+```
 
 
 ## ghq

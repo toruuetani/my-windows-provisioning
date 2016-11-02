@@ -9,6 +9,7 @@ Windows10@BootCamp の設定方法
  - [Adobe Acrobat Reader DC](https://get.adobe.com/jp/reader/)
  - [Atom](https://atom.io/) ※後述する Visual Studio Code でも可
  - [Google Chrome](https://www.google.co.jp/chrome/browser/desktop/)
+ - [iTunes](http://www.apple.com/jp/itunes/download/)
  - [Launchy: The Open Source Keystroke Launcher](http://www.launchy.net/download.php)
  - [Lhaplus](http://forest.watch.impress.co.jp/library/software/lhaplus/)
  - [MacType](https://github.com/snowie2000/mactype/releases)

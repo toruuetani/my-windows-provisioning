@@ -5,7 +5,16 @@ Windows10@BootCamp の設定方法
 ## 基本方針
 - プログラム等は C ドライブにインストールする。
 - データは Z ドライブ（ TrueCrypt にて作成した暗号化コンテナ）に保存する。
-
+- 下記アプリはインストーラでインストールする。
+ - [Adobe Acrobat Reader DC](https://get.adobe.com/jp/reader/)
+ - [Atom](https://atom.io/) ※後述する Visual Studio Code でも可
+ - [Google Chrome](https://www.google.co.jp/chrome/browser/desktop/)
+ - [Launchy: The Open Source Keystroke Launcher](http://www.launchy.net/download.php)
+ - [Lhaplus](http://forest.watch.impress.co.jp/library/software/lhaplus/)
+ - [MacType](https://github.com/snowie2000/mactype/releases)
+ - [Orchis](http://www.eonet.ne.jp/~gorota/)
+ - [WinMerge 日本語版](http://www.geocities.co.jp/SiliconValley-SanJose/8165/winmerge.html)
+ - [WinShot](http://forest.watch.impress.co.jp/library/software/winshot/)
 
 ## キーボード設定
 Fnと同時押ししないとF1～F12が使えなくなるのでレジストリを変更する。

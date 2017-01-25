@@ -7,7 +7,7 @@ Windows10@BootCamp の設定方法
 - データは Z ドライブ（ TrueCrypt にて作成した暗号化コンテナ）に保存する。
 - 下記アプリはインストーラでインストールする。
  - [Adobe Acrobat Reader DC](https://get.adobe.com/jp/reader/)
- - [Atom](https://atom.io/) ※後述する Visual Studio Code でも可
+ - [GitKraken](https://www.gitkraken.com/)
  - [Google Chrome](https://www.google.co.jp/chrome/browser/desktop/)
  - [iTunes](http://www.apple.com/jp/itunes/download/)
  - [Launchy: The Open Source Keystroke Launcher](http://www.launchy.net/download.php)
@@ -93,77 +93,23 @@ git config --global user.name "toruuetani"
 git config --global user.email toruuetani __at__ gmail.com
 ```
 
+## go ライブラリ
+`go-get.bat` を実行して必須ライブラリをインストールする。
 
-## ghq
-下記のコマンドを実行してインストールする。
-```
-go get github.com/motemen/ghq
-```
-
-設定ファイル `C:\Users\toru\.gitconfig` に ghq の設定を追記する。
+その後 ghq の設定を設定ファイル `C:\Users\toru\.gitconfig` に追記する。
 ```
 [ghq]
   root = Z:/src
 ```
-
-## SourceTree
-メニューから「ツール」->「オプション」からプロジェクトフォルダを ```Z:\src\github.com\toruuetani``` にする。
-マージを WinMerge でできるようにするため、設定ファイル `C:\Users\toru\.gitconfig` に WinMerge の設定を追記する。
-
-```
-[merge]
-	tool = WinMerge
-[mergetool "WinMerge"]
-    cmd = \"C:/Program Files/WinMerge/WinMergeU.exe\" //e //u //wl //wr \"$LOCAL\" \"$BASE\" \"$REMOTE\" //o \"$MERGED\"
-    trustExitCode = true
-[diff]
-	guitool = winmerge
-[difftool "winmerge"]
-	path = C:/Program Files/WinMerge/winmergeu.exe
-	cmd = \"C:/Program Files/WinMerge/winmergeu.exe\" -e -u \"$LOCAL\" \"$REMOTE\"
-```
-
 
 ## Visual Studio Code
 ```https://github.com/adobe-fonts/source-han-code-jp/archive/2.000R.zip``` をダウンロードしてインストールしておく。
 メニューから File -> Preferences -> User Settings と選択し、 ```settings.json``` を以下のように編集する。
 ```
 {
-    "editor.fontFamily": "源ノ角ゴシック Code JP",
-    "editor.fontSize": 14
+    "editor.fontFamily": "'Myrica M', Consolas, 'Courier New', monospace",
+    "editor.fontSize": 15,
+    "workbench.editor.enablePreview": false
 }
-```
-
-
-## OneDrive
-アンインストールは下記のコマンドで行う。
-
-```
-taskkill /f /im OneDrive.exe
-%SystemRoot%\System32\OneDriveSetup.exe /uninstall  #32bitの場合
-%SystemRoot%\SysWOW64\OneDriveSetup.exe /uninstall  #64bitの場合
-```
-
-レジストリエディタで下記を修正して、エクスプローラのナビから削除する。
-```
-キー：HKEY_CLASSES_ROOT\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}
-エントリ：System.IsPinnedToNameSpaceTree (REG_DWORD)
-値：0 (非表示)
-```
-
-## go for visual studio code
-Visual Studio Code で golang 開発環境を作成する。
-```
-go get -u -v github.com/nsf/gocode
-go get -u -v github.com/rogpeppe/godef
-go get -u -v github.com/golang/lint/golint
-go get -u -v github.com/lukehoban/go-outline
-go get -u -v sourcegraph.com/sqs/goreturns
-go get -u -v golang.org/x/tools/cmd/gorename
-go get -u -v github.com/tpng/gopkgs
-go get -u -v github.com/newhook/go-symbols
-go get -u -v golang.org/x/tools/cmd/guru
-go get -u -v golang.org/x/tools/cmd/goimports
-go get -u -v github.com/derekparker/delve/cmd/dlv
 ```
 

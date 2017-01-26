@@ -1,0 +1,16 @@
+[include]
+    path = ~/.gitconfig.local
+
+[ghq]
+    root = Z:/src
+
+[merge]
+    tool = WinMerge
+
+[mergetool]
+    prompt = false
+    keepBackup = false
+
+[mergetool "WinMerge"]
+    trustExitCode = false
+    cmd = \"C:/Program Files/WinMerge/WinMergeU.exe\" -e -u -fm -wl -wr -dl \"Mine File\" -dm \"Base File\" -dr \"Theirs File\" \"$LOCAL\" \"$BASE\" \"$REMOTE\" -o \"$MERGED\"

@@ -87,20 +87,11 @@ Go を https://golang.org/ からインストールしたら、環境変数 `GOP
 
 ## Git
 `go get` するには Git が不可欠なので https://git-scm.com/download/win からダウンロードしてインストールする。
-また、ユーザー情報を下記のように設定しておく。
-```
-git config --global user.name "toruuetani"
-git config --global user.email toruuetani __at__ gmail.com
-```
+
 
 ## go ライブラリ
 `go-get.bat` を実行して必須ライブラリをインストールする。
 
-その後 ghq の設定を設定ファイル `C:\Users\toru\.gitconfig` に追記する。
-```
-[ghq]
-  root = Z:/src
-```
 
 ## Visual Studio Code
 ```https://github.com/adobe-fonts/source-han-code-jp/archive/2.000R.zip``` をダウンロードしてインストールしておく。

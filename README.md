@@ -5,6 +5,7 @@ Windows10@BootCamp の設定方法
 ## 基本方針
 - プログラム等は C ドライブにインストールする。
 - データは Z ドライブ（ TrueCrypt にて作成した暗号化コンテナ）に保存する。
+- 各種データは OneDrive で同期し、同期先を `Z:\OneDrive` に変更する。
 - 下記アプリはインストーラでインストールする。
  - [Adobe Acrobat Reader DC](https://get.adobe.com/jp/reader/)
  - [GitKraken](https://www.gitkraken.com/)
@@ -16,6 +17,11 @@ Windows10@BootCamp の設定方法
  - [Orchis](http://www.eonet.ne.jp/~gorota/)
  - [WinMerge 日本語版](http://www.geocities.co.jp/SiliconValley-SanJose/8165/winmerge.html)
  - [WinShot](http://forest.watch.impress.co.jp/library/software/winshot/)
+
+## PATH設定
+下記ディレクトリを追加する。
+- %GOPATH%\bin
+- Z:\OneDrive\Tools\Bin
 
 ## キーボード設定
 Fnと同時押ししないとF1～F12が使えなくなるのでレジストリを変更する。

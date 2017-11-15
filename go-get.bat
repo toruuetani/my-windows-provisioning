@@ -1,6 +1,7 @@
 REM utility
 go get github.com/motemen/ghq
 go get github.com/peco/peco
+go get github.com/mholt/archiver/cmd/archiver
 
 
 REM develop

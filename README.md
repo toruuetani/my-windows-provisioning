@@ -5,10 +5,8 @@ Windows10@BootCamp の設定方法
 ## 基本方針
 - プログラム等は C ドライブにインストールする。
 - データは Z ドライブ（ [VeraCrypt](https://www.veracrypt.fr/en/Downloads.html) にて作成した暗号化コンテナ）に保存する。
-
  - 暗号化ファイルコンテナは `C:\Works\AllWorks` とする。
  - ファイルシステムは NTFS とすること。
-
 - 各種データは OneDrive で同期し、同期先を `Z:\OneDrive` に変更する。
 
 
@@ -32,6 +30,7 @@ Windows10@BootCamp の設定方法
  - [Launchy: The Open Source Keystroke Launcher](http://www.launchy.net/download.php)
  - [Lhaplus](http://forest.watch.impress.co.jp/library/software/lhaplus/)
  - [Orchis](http://www.eonet.ne.jp/~gorota/)
+ - [Visual Studio Code](https://code.visualstudio.com/download)
  - [WinMerge 日本語版](http://www.geocities.co.jp/SiliconValley-SanJose/8165/winmerge.html)
  - [WinShot](http://forest.watch.impress.co.jp/library/software/winshot/)
 
@@ -46,7 +45,7 @@ Windows10@BootCamp の設定方法
 GOPATH=Z:\ を追加する。
 PATH設定に下記ディレクトリを追加する。
 - %GOPATH%\bin
-- Z:\OneDrive\Tools\Bin
+- %OneDrive%\Tools\Bin
 
 
 ## Cisco VPN Client Ver.5.0.07.0440
@@ -81,12 +80,7 @@ Reason 442: Failed to enable Virtual Adapter.
 
 
 ## Visual Studio Code 設定
-```https://github.com/adobe-fonts/source-han-code-jp/archive/2.000R.zip``` をダウンロードしてインストールしておく。
-メニューから File -> Preferences -> User Settings と選択し、 ```settings.json``` を以下のように編集する。
-```
-{
-    "editor.fontFamily": "'Myrica M', Consolas, 'Courier New', monospace",
-    "editor.fontSize": 15,
-    "workbench.editor.enablePreview": false
-}
-```
+拡張機能 `settings sync` をインストールする。 
+再起動後、 Visual Studio Code の画面で Shift + Alt + D を押して設定をダウンロードする。
+
+

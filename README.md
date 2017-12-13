@@ -5,8 +5,10 @@ Windows10@BootCamp の設定方法
 ## 基本方針
 - プログラム等は C ドライブにインストールする。
 - データは Z ドライブ（ [VeraCrypt](https://www.veracrypt.fr/en/Downloads.html) にて作成した暗号化コンテナ）に保存する。
- - 暗号化ファイルコンテナは `C:\Works\AllWorks` とする。
+
+ - 暗号化ファイルコンテナは `C:\Works\AllWorks` とする。
  - ファイルシステムは NTFS とすること。
+
 - 各種データは OneDrive で同期し、同期先を `Z:\OneDrive` に変更する。
 
 

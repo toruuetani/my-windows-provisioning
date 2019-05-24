@@ -1,7 +1,0 @@
-[user]
-	name = toruuetani
-	email = toruuetani__at__gmail.com
-
-[core]
-	autocrlf = true
-	excludesfile = C:\\Users\\toru\\Documents\\gitignore_global.txt

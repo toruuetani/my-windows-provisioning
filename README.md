@@ -20,21 +20,29 @@ Windows10@BootCamp の設定方法
  * ［機能選択］ダイアログボックスで［IME-オフ］を選択し、［OK］ボタンをクリック。
 
 
+## ドライバ
+Apple Super Drive を使用するため、下記ドライバをインストールする。
+- Z:\OneDrive\Configuration\BootCamp\AppleODDInstaller64.exe
+
 ## アプリリスト
- - [Adobe Acrobat Reader DC](https://get.adobe.com/jp/reader/)
- - [Git](https://git-for-windows.github.io/)
- - [GitKraken](https://www.gitkraken.com/)
- - [Go](https://golang.org/dl/) ※C:\Go にインストールすること
- - [Google Chrome](https://www.google.co.jp/chrome/browser/desktop/)
- - [iTunes](http://www.apple.com/jp/itunes/download/)
- - [Launchy: The Open Source Keystroke Launcher](http://www.launchy.net/download.php)
- - [Lhaplus](http://forest.watch.impress.co.jp/library/software/lhaplus/)
- - [Orchis](http://www.eonet.ne.jp/~gorota/)
- - [Visual Studio Code](https://code.visualstudio.com/download)
- - [WinMerge 日本語版](http://www.geocities.co.jp/SiliconValley-SanJose/8165/winmerge.html)
- - [WinShot](http://forest.watch.impress.co.jp/library/software/winshot/)
+- 最初にインストール
+  - [Google Chrome](https://www.google.co.jp/chrome/browser/desktop/)
+  - [Launchy: The Open Source Keystroke Launcher](http://www.launchy.net/download.php)
+  - [Trackpad++](http://trackpad.forbootcamp.org/#download)
+- 開発用
+  - [Git](https://git-for-windows.github.io/)
+  - [GitKraken](https://www.gitkraken.com/)
+  - [Go](https://golang.org/dl/) ※C:\Go にインストールすること
+  - [Visual Studio Code](https://code.visualstudio.com/download)
+- ユーティリティ
+  - [Adobe Acrobat Reader DC](https://get.adobe.com/jp/reader/)
+  - [iTunes](http://www.apple.com/jp/itunes/download/)
+  - [7-Zip](https://sevenzip.osdn.jp/)
+  - [Orchis](http://www.eonet.ne.jp/~gorota/)
+  - [WinShot](http://forest.watch.impress.co.jp/library/software/winshot/)
 
 ### OneDrive で同期するツール
+これらは実行ファイル右クリックで「スタートにピン留めする」
 - Z:\OneDrive\Tools\Cmder ・・・ [Cmder](http://cmder.net/)
 - Z:\OneDrive\Tools\RLogin ・・・ [RLogin](http://nanno.dip.jp/softlib/man/rlogin/)
 - Z:\OneDrive\Tools\WinSCP ・・・ [WinSCP](https://winscp.net/eng/docs/lang:jp)
@@ -48,39 +56,14 @@ PATH設定に下記ディレクトリを追加する。
 - %OneDrive%\Tools\Bin
 
 
-## Cisco VPN Client Ver.5.0.07.0440
-Windows10 には対応してないため、そのままではインストールできない。
-```
-Error 27850  Unable to manage networking component. 
-Operatin system corruptioin may be preventing installation. 
-```
-
-以下の手順に従う。
-
-1. ftp://files.citrix.com/winfix.exe から winfix.exe をダウンロードして実行
-1. ftp://files.citrix.com/dneupdate64.msi から dneupdate64.msi をダウンロードして実行
-1. vpnclient_setup.msi を右クリックして 互換性をWindows 7に設定しておく。
-1. vpnclient_setup.msi を実行
-
-ここまででインストールは可能になるが、コネクションを確立しようとしてもエラーになる。
-```
-Secure VPN Connection terminated locally by the Client.
-Reason 442: Failed to enable Virtual Adapter.
-```
-
-1. これは以下の手順で回避可能。
-1. レジストリエディタを起動
-1. `HKLM\SYSTEM\CurrentControlSet\Services\CVirtA` の `DisplayName` の値を
-   `Cisco Systems VPN Adapter for 64-bit Windows` に変更
-1. 再起動
-
-
 ## go ライブラリ
-`go-get.bat` を実行して必須ライブラリをインストールする。
-
+```
+go get github.com/motemen/ghq
+go get github.com/peco/peco
+```
 
 ## Visual Studio Code 設定
-拡張機能 `settings sync` をインストールする。 
+拡張機能 `settings sync` をインストールする。 github token と gist ID を準備すること。
 再起動後、 Visual Studio Code の画面で Shift + Alt + D を押して設定をダウンロードする。
 
 

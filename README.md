@@ -33,7 +33,7 @@ Apple Super Drive を使用するため、下記ドライバをインストー�
     - ```C:\VSCode``` にインストールする
 - ユーティリティ
   - [Adobe Acrobat Reader DC](https://get.adobe.com/jp/reader/)
-  - [iTunes](http://www.apple.com/jp/itunes/download/)
+  - [iTunes - Microsoft Store](https://www.microsoft.com/ja-jp/p/itunes/9pb2mz1zmb1s?cid=appledotcom&rtc=1&activetab=pivot:overviewtab)
   - [Greenshot](https://getgreenshot.org/)
     - Capture region に ```Control+Shift+F12``` にアサインする
 

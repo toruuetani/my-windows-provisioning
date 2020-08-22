@@ -12,12 +12,6 @@ Windows10@BootCamp の設定方法
 
 ## キーボード設定
 キーボードの英数・かなをIMEのOFF・ONに割り当てる。
-* 言語バーの [ツール] をクリックし、[プロパティ] をクリック。
-* ［全般］タブをクリックし、［編集操作］セクションで［変更］ボタンをクリック。
-* ［キー］カラムの［ひらがな］行の［入力/変換済み文字なし］カラムにある [ひらがなキー] を選択し、［変更］ボタンをクリック。
- * ［機能選択］ダイアログボックスで［IME-オン］を選択し、［OK］ボタンをクリック。
-* ［キー］カラムの［無変換］行の［入力/変換済み文字なし］カラムにある [かな切替] を選択し、［変更］ボタンをクリック。
- * ［機能選択］ダイアログボックスで［IME-オフ］を選択し、［OK］ボタンをクリック。
 
 
 ## ドライバ
@@ -32,14 +26,16 @@ Apple Super Drive を使用するため、下記ドライバをインストー�
 - 開発用
   - [Git](https://git-for-windows.github.io/)
   - [GitKraken](https://www.gitkraken.com/)
-  - [Go](https://golang.org/dl/) ※C:\Go にインストールすること
+  - [Go](https://golang.org/dl/)
+    - ```C:\Go``` にインストールする
   - [Visual Studio Code](https://code.visualstudio.com/download)
+    - User Installer をダウンロードする
+    - ```C:\VSCode``` にインストールする
 - ユーティリティ
   - [Adobe Acrobat Reader DC](https://get.adobe.com/jp/reader/)
   - [iTunes](http://www.apple.com/jp/itunes/download/)
-  - [7-Zip](https://sevenzip.osdn.jp/)
-  - [Orchis](http://www.eonet.ne.jp/~gorota/)
-  - [WinShot](http://forest.watch.impress.co.jp/library/software/winshot/)
+  - [Greenshot](https://getgreenshot.org/)
+    - Capture region に ```Control+Shift+F12``` にアサインする
 
 ### OneDrive で同期するツール
 これらは実行ファイル右クリックで「スタートにピン留めする」

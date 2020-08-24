@@ -36,11 +36,14 @@ scoop bucket add extras
 次に以下のコマンドでアプリをインストールする。
 
 ```
+scoop install ghq
 scoop install gitkraken
 scoop install go
 scoop install greenshot
+scoop install jq
 scoop install launchy
 scoop install windows-terminal
+scoop install winscp
 ```
 
 ### Greenshot 設定
@@ -64,7 +67,6 @@ scoop install windows-terminal
 ### OneDrive で同期するツール
 これらは実行ファイル右クリックで「スタートにピン留めする」
 - Z:\OneDrive\Tools\RLogin ・・・ [RLogin](http://nanno.dip.jp/softlib/man/rlogin/)
-- Z:\OneDrive\Tools\WinSCP ・・・ [WinSCP](https://winscp.net/eng/docs/lang:jp)
 - Z:\OneDrive\Tools\Wmv ・・・ [AGDRec](http://t-ishii.la.coocan.jp/download/AGDRec.html)
 
 
@@ -74,12 +76,6 @@ PATH設定に下記ディレクトリを追加する。
 - %GOPATH%\bin
 - %OneDrive%\Tools\Bin
 
-
-## go ライブラリ
-```
-go get github.com/motemen/ghq
-go get github.com/peco/peco
-```
 
 ## Visual Studio Code 設定
 拡張機能 `settings sync` をインストールする。 github token と gist ID を準備すること。

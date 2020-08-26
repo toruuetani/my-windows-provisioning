@@ -47,6 +47,7 @@ scoop install launchy
 scoop install peco
 # scoop install python
 scoop install sudo
+# scoop install terraform
 scoop install windows-terminal
 scoop install winscp
 ```

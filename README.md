@@ -42,6 +42,11 @@ scoop install go
 scoop install greenshot
 scoop install jq
 scoop install launchy
+# scoop install mysql-workbench
+# scoop install nvm
+scoop install peco
+# scoop install python
+scoop install sudo
 scoop install windows-terminal
 scoop install winscp
 ```
@@ -49,9 +54,14 @@ scoop install winscp
 ### Greenshot 設定
 * Capture region に ```Control+Shift+F12``` にアサインする
 
+### Launchy 設定
+* カタログに以下を追加 ※ディレクトリも含むにチェックすること
+  * C:\ProgramData\Microsoft\Windows\Start Menu
+  * %APPDATA%\Microsoft\Windows\Start Menu\Programs
+
 
 ## アプリのインストール
-自動更新の機能を持つ以下のアプリは手動でインストールする。
+以下のアプリは手動でインストールする。
 
   - [Google Chrome](https://www.google.co.jp/chrome/browser/desktop/)
   - [Trackpad++](http://trackpad.forbootcamp.org/#download)
@@ -59,6 +69,7 @@ scoop install winscp
   - [Visual Studio Code](https://code.visualstudio.com/download)
     - User Installer をダウンロードする
     - ```C:\VSCode``` にインストールする
+  - [Docker Desktop on Windows](https://docs.docker.com/docker-for-windows/install/)
 - ユーティリティ
   - [Adobe Acrobat Reader DC](https://get.adobe.com/jp/reader/)
   - [iTunes - Microsoft Store](https://www.microsoft.com/ja-jp/p/itunes/9pb2mz1zmb1s?cid=appledotcom&rtc=1&activetab=pivot:overviewtab)

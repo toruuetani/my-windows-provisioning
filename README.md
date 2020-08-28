@@ -5,7 +5,7 @@ Windows10@BootCamp の設定方法
 ## 基本方針
 * プログラム等は C ドライブにインストールする。
 * データは Z ドライブ（ [VeraCrypt](https://www.veracrypt.fr/en/Downloads.html) にて作成した暗号化コンテナ）に保存する。
-  * 不具合解消のため ```C:\windows\system32\drivers``` にある ```applehfs.sys``` を `applehfs-old.sys``` にリネームする。
+  * 不具合解消のため ```C:\windows\system32\drivers``` にある ```applehfs.sys``` を ```applehfs-old.sys``` にリネームする。
   * 暗号化ファイルコンテナは `C:\Works\AllWorks` とする。
   * ファイルシステムは NTFS とすること。
 * 各種データは OneDrive で同期し、同期先を `Z:\OneDrive` に変更する。
@@ -56,7 +56,7 @@ scoop install winscp
 * Capture region に ```Control+Shift+F12``` にアサインする
 
 ### Launchy 設定
-* カタログに以下を追加 ※ディレクトリも含むにチェックすること
+* カタログに以下を追加 ※実行可能ファイルも含むにチェックすること
   * C:\ProgramData\Microsoft\Windows\Start Menu
   * %APPDATA%\Microsoft\Windows\Start Menu\Programs
 

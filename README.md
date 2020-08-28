@@ -39,15 +39,18 @@ scoop bucket add extras
 scoop install ghq
 scoop install gitkraken
 scoop install go
+# scoop install googlechrome
 scoop install greenshot
 scoop install jq
 scoop install launchy
 # scoop install mysql-workbench
 # scoop install nvm
 scoop install peco
+scoop install pwsh
 # scoop install python
 scoop install sudo
 # scoop install terraform
+# scoop install vscode
 scoop install windows-terminal
 scoop install winscp
 ```
@@ -59,6 +62,9 @@ scoop install winscp
 * カタログに以下を追加 ※実行可能ファイルも含むにチェックすること
   * C:\ProgramData\Microsoft\Windows\Start Menu
   * %APPDATA%\Microsoft\Windows\Start Menu\Programs
+
+### Visual Studio Code 設定
+設定は公式の同期を使用する。アカウントは GitHub を利用すること。
 
 
 ## アプリのインストール
@@ -87,10 +93,5 @@ GOPATH=Z:\ を追加する。
 PATH設定に下記ディレクトリを追加する。
 - %GOPATH%\bin
 - %OneDrive%\Tools\Bin
-
-
-## Visual Studio Code 設定
-拡張機能 `settings sync` をインストールする。 github token と gist ID を準備すること。
-再起動後、 Visual Studio Code の画面で Shift + Alt + D を押して設定をダウンロードする。
 
 

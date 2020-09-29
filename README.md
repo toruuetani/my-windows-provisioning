@@ -43,7 +43,7 @@ scoop install go
 scoop install greenshot
 scoop install jq
 scoop install launchy
-# scoop install mysql-workbench
+scoop install mysql-workbench
 scoop install nvm
 scoop install peco
 scoop install pwsh

@@ -39,7 +39,6 @@ scoop bucket add extras
 scoop install ghq
 scoop install gitkraken
 scoop install go
-# scoop install googlechrome
 scoop install greenshot
 scoop install jq
 scoop install launchy
@@ -47,10 +46,8 @@ scoop install mysql-workbench
 scoop install nvm
 scoop install peco
 scoop install pwsh
-# scoop install python
 scoop install sudo
-# scoop install terraform
-# scoop install vscode
+scoop install vscode
 scoop install windows-terminal
 scoop install winscp
 ```
@@ -73,9 +70,6 @@ scoop install winscp
   - [Google Chrome](https://www.google.co.jp/chrome/browser/desktop/)
   - [Trackpad++](http://trackpad.forbootcamp.org/#download)
 - 開発用
-  - [Visual Studio Code](https://code.visualstudio.com/download)
-    - User Installer をダウンロードする
-    - ```C:\VSCode``` にインストールする
   - [Docker Desktop on Windows](https://docs.docker.com/docker-for-windows/install/)
 - ユーティリティ
   - [Adobe Acrobat Reader DC](https://get.adobe.com/jp/reader/)

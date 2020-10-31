@@ -52,6 +52,12 @@ scoop install windows-terminal
 scoop install winscp
 ```
 
+### Git 設定
+```
+git config --global core.autocrlf false
+git config --global ghq.root z:\src
+```
+
 ### Greenshot 設定
 * Capture region に ```Control+Shift+F12``` にアサインする
 

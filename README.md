@@ -76,7 +76,7 @@ PATH設定に下記ディレクトリを追加する。
 
 ### Visual Studio Code 設定
 設定は公式の同期を使用する。アカウントは GitHub を利用すること。
-
+右クリックで開けるように ```%USERPROFILE%\scoop\apps\vscode\current\vscode-install-context.reg``` を実行する。
 
 ## アプリのインストール
 以下のアプリは手動でインストールする。

@@ -5,10 +5,9 @@ Windows10@BootCamp の設定方法
 ## 基本方針
 * プログラム等は C ドライブにインストールする。
 * データは Z ドライブ（ [VeraCrypt](https://www.veracrypt.fr/en/Downloads.html) にて作成した暗号化コンテナ）に保存する。
-  * 不具合解消のため ```C:\windows\system32\drivers``` にある ```applehfs.sys``` を ```applehfs-old.sys``` にリネームする。
+  * コンテナが作成できない場合不 ```C:\windows\system32\drivers``` にある ```applehfs.sys``` を ```applehfs-old.sys``` にリネームする。
   * 暗号化ファイルコンテナは `C:\Works\AllWorks` とする。
   * ファイルシステムは NTFS とすること。
-* 各種データは OneDrive で同期し、同期先を `Z:\OneDrive` に変更する。
 
 
 ## キーボード設定
@@ -36,20 +35,21 @@ scoop bucket add extras
 次に以下のコマンドでアプリをインストールする。
 
 ```
-scoop install ghq
-scoop install gitkraken
-scoop install go
-scoop install greenshot
-scoop install jq
-scoop install launchy
-scoop install mysql-workbench
-scoop install nvm
-scoop install peco
-scoop install pwsh
-scoop install sudo
-scoop install vscode
-scoop install windows-terminal
-scoop install winscp
+scoop install ^
+  ghq ^
+  gitkraken ^
+  go ^
+  greenshot ^
+  jq ^
+  launchy ^
+  mysql-workbench ^
+  nvm ^
+  peco ^
+  pwsh ^
+  sudo ^
+  vscode ^
+  windows-terminal ^
+  winscp
 ```
 
 ### Git 設定
@@ -57,6 +57,11 @@ scoop install winscp
 git config --global core.autocrlf false
 git config --global ghq.root z:\src
 ```
+
+### Go 設定
+環境変数に GOPATH=Z:\ を追加する。
+PATH設定に下記ディレクトリを追加する。
+- %GOPATH%\bin
 
 ### Greenshot 設定
 * Capture region に ```Control+Shift+F12``` にアサインする
@@ -84,17 +89,5 @@ git config --global ghq.root z:\src
   - [Adobe Acrobat Reader DC](https://get.adobe.com/jp/reader/)
   - [iTunes - Microsoft Store](https://www.microsoft.com/ja-jp/p/itunes/9pb2mz1zmb1s?cid=appledotcom&rtc=1&activetab=pivot:overviewtab)
 
-
-### OneDrive で同期するツール
-これらは実行ファイル右クリックで「スタートにピン留めする」
-- Z:\OneDrive\Tools\RLogin ・・・ [RLogin](http://nanno.dip.jp/softlib/man/rlogin/)
-- Z:\OneDrive\Tools\Wmv ・・・ [AGDRec](http://t-ishii.la.coocan.jp/download/AGDRec.html)
-
-
-## 環境変数
-GOPATH=Z:\ を追加する。
-PATH設定に下記ディレクトリを追加する。
-- %GOPATH%\bin
-- %OneDrive%\Tools\Bin
 
 

@@ -5,7 +5,7 @@ Windows10@BootCamp の設定方法
 ## 基本方針
 * プログラム等は C ドライブにインストールする。
 * データは Z ドライブ（ [VeraCrypt](https://www.veracrypt.fr/en/Downloads.html) にて作成した暗号化コンテナ）に保存する。
-  * コンテナが作成できない場合不 ```C:\windows\system32\drivers``` にある ```applehfs.sys``` を ```applehfs-old.sys``` にリネームする。
+  * コンテナが作成できない場合 ```C:\windows\system32\drivers``` にある ```applehfs.sys``` を ```applehfs-old.sys``` にリネームする。
   * 暗号化ファイルコンテナは `C:\Works\AllWorks` とする。
   * ファイルシステムは NTFS とすること。
 

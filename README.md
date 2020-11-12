@@ -65,6 +65,9 @@ git config --global ghq.root z:\src
 * カタログに以下を追加 ※実行可能ファイルも含むにチェックすること
   * C:\ProgramData\Microsoft\Windows\Start Menu
   * %APPDATA%\Microsoft\Windows\Start Menu\Programs
+* スタートアップ登録
+  * ```C:\Users\%USERNAME%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Scoop Apps``` にあるショートカットをコピー
+  * エクスプローラーで ```shell:startup``` を入力して表示されるフォルダにペースト
 
 ### Visual Studio Code 設定
 設定は公式の同期を使用する。アカウントは GitHub を利用すること。

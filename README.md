@@ -59,9 +59,8 @@ git config --global ghq.root z:\src
 ```
 
 ### Go 設定
-環境変数に GOPATH=Z:\ を追加する。
-PATH設定に下記ディレクトリを追加する。
-- %GOPATH%\bin
+* 環境変数に GOPATH=`Z:\` を追加する。
+* PATH設定に `%GOPATH%\bin` を追加する。
 
 ### Greenshot 設定
 * Capture region に ```Control+Shift+F12``` にアサインする
@@ -71,23 +70,21 @@ PATH設定に下記ディレクトリを追加する。
   * C:\ProgramData\Microsoft\Windows\Start Menu
   * %APPDATA%\Microsoft\Windows\Start Menu\Programs
 * スタートアップ登録
-  * ```C:\Users\%USERNAME%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Scoop Apps``` にあるショートカットをコピー
+  * ```%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Scoop Apps``` にあるショートカットをコピー
   * エクスプローラーで ```shell:startup``` を入力して表示されるフォルダにペースト
 
 ### Visual Studio Code 設定
-設定は公式の同期を使用する。アカウントは GitHub を利用すること。
-右クリックで開けるように ```%USERPROFILE%\scoop\apps\vscode\current\vscode-install-context.reg``` を実行する。
+* 設定は公式の同期を使用する。アカウントは GitHub を利用すること。
+* 右クリックで開けるように ```%USERPROFILE%\scoop\apps\vscode\current\vscode-install-context.reg``` を実行する。
 
 ## アプリのインストール
 以下のアプリは手動でインストールする。
 
-  - [Google Chrome](https://www.google.co.jp/chrome/browser/desktop/)
-  - [Trackpad++](http://trackpad.forbootcamp.org/#download)
-- 開発用
-  - [Docker Desktop on Windows](https://docs.docker.com/docker-for-windows/install/)
-- ユーティリティ
-  - [Adobe Acrobat Reader DC](https://get.adobe.com/jp/reader/)
-  - [iTunes - Microsoft Store](https://www.microsoft.com/ja-jp/p/itunes/9pb2mz1zmb1s?cid=appledotcom&rtc=1&activetab=pivot:overviewtab)
+- [Google Chrome](https://www.google.co.jp/chrome/browser/desktop/)
+- [Trackpad++](http://trackpad.forbootcamp.org/#download)
+- [Docker Desktop on Windows](https://docs.docker.com/docker-for-windows/install/)
+- [Adobe Acrobat Reader DC](https://get.adobe.com/jp/reader/)
+- [iTunes - Microsoft Store](https://www.microsoft.com/ja-jp/p/itunes/9pb2mz1zmb1s?cid=appledotcom&rtc=1&activetab=pivot:overviewtab)
 
 
 

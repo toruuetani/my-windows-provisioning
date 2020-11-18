@@ -36,6 +36,7 @@ scoop bucket add extras
 
 ```
 scoop install ^
+  aws ^
   ghq ^
   gitkraken ^
   go ^

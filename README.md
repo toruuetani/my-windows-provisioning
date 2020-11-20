@@ -30,6 +30,7 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
 scoop install git
 scoop bucket add extras
+scoop bucket add mybucket https://github.com/toruuetani/scoop-bucket.git
 ```
 
 次に以下のコマンドでアプリをインストールする。
@@ -37,6 +38,8 @@ scoop bucket add extras
 ```
 scoop install ^
   aws ^
+  copilot ^
+  ecs-cli ^
   ghq ^
   gitkraken ^
   go ^
@@ -47,9 +50,11 @@ scoop install ^
   nvm ^
   peco ^
   pwsh ^
+  rlogin ^
   sudo ^
   vscode ^
   windows-terminal ^
+  winmerge-jp ^
   winscp
 ```
 

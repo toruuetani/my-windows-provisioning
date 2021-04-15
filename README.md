@@ -18,6 +18,8 @@ Windows10@BootCamp の設定方法
 Apple Super Drive を使用するため、下記ドライバをインストールする。
 - Z:\OneDrive\Configuration\BootCamp\AppleODDInstaller64.exe
 
+Touch Pad を使用するため、下記ドライバをインストールする。
+- [imbushuo/mac-precision-touchpad: Windows Precision Touchpad Driver Implementation for Apple MacBook / Magic Trackpad](https://github.com/imbushuo/mac-precision-touchpad)
 
 ## アプリのインストール by Scoop
 アプリは [Scoop](https://scoop.sh/) でインストールする。
@@ -87,7 +89,6 @@ git config --global ghq.root z:\src
 以下のアプリは手動でインストールする。
 
 - [Google Chrome](https://www.google.co.jp/chrome/browser/desktop/)
-- [Trackpad++](http://trackpad.forbootcamp.org/#download)
 - [Docker Desktop on Windows](https://docs.docker.com/docker-for-windows/install/)
 - [Adobe Acrobat Reader DC](https://get.adobe.com/jp/reader/)
 - [iTunes - Microsoft Store](https://www.microsoft.com/ja-jp/p/itunes/9pb2mz1zmb1s?cid=appledotcom&rtc=1&activetab=pivot:overviewtab)

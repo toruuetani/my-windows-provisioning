@@ -39,10 +39,8 @@ scoop bucket add mybucket https://github.com/toruuetani/scoop-bucket.git
 
 ```
 scoop install ^
+  a5m2 ^
   aws ^
-  copilot ^
-  ecs-cli ^
-  ghq ^
   gitkraken ^
   go ^
   greenshot ^
@@ -50,13 +48,15 @@ scoop install ^
   launchy ^
   mysql-workbench ^
   nvm ^
-  peco ^
   pwsh ^
+  rain ^
   rlogin ^
   sudo ^
+  terraform ^
+  ttn-lw-cli ^
   vscode ^
   windows-terminal ^
-  winmerge-jp ^
+  winmerge ^
   winscp
 ```
 
